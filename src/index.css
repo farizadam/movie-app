@@ -1,0 +1,223 @@
+body {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.card-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.card-container .card-title {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.card-container img {
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.card-container p {
+    color: #d3d3d3;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 250px;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+.card-container .info-button {
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card-container .info-button:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        width: 45%;
+        margin: 10px;
+        padding: 40px;
+    }
+
+    form {
+        margin-top: 30px;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    button {
+        padding: 14px 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-container {
+        width: 30%;
+        margin: 20px;
+        padding: 40px;
+    }
+
+    form {
+        margin-top: 40px;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    button {
+        padding: 16px 28px;
+    }
+}
+
+.movie-details {
+    text-align: center;
+    color: #fff;
+    background-color: #1b1b1b;
+    padding: 20px;
+}
+
+.movie-details img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.movie-details h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.movie-details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Add this to ensure content is centered within the MovieList container */
+.movie-list {
+    display: flex;
+    flex-direction: column; /* Stack search bar and grid vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.movies-grid {
+    display: flex;           /* Use flexbox for layout */
+    flex-wrap: wrap;        /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    /* Align items along the cross-axis (horizontally in this case) */
+    align-items: stretch;
+    width: 90%;             /* Take up 90% of the parent's width */
+    max-width: 1200px;      /* Limit the maximum width */
+    margin: 20px auto;      /* Add some margin and center the grid */
+}
+
+.movie-details {
+    text-align: center;
+    color: #fff;
+    background-color: #1b1b1b;
+    padding: 20px;
+    width: 80%; /* Adjust as needed */
+    max-width: 800px; /* Maximum width for larger screens */
+    margin: 20px auto; /* Center the container */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.movie-details img {
+    max-width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.movie-details h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.movie-details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #d3d3d3; /* Consistent with card paragraphs */
+    line-height: 1.6;
+}
+
+.movie-details strong {
+    color: #ffffff; /* Highlight labels */
+}
